@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Carousel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .carousel-caption {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+            color: #fff;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000; /* Dark background for arrows */
+            border-radius: 50%; /* Rounded arrows */
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Here you can find some basic information regarding projects of mine. Do note that ALL of my projects that are public 
+                        are discussed in DETAIL on my blog. So please check out INSERT_SITE! That being said, here you can find some of my latest projects -- I try to update 
+                        this site as much as possible!</p>
+                    </div>
+                </div>
+                <!-- Add more carousel items here -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <h1>Another Project</h1>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Details about another project.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
